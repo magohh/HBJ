@@ -1,0 +1,37 @@
+.img1{
+
+	background-image: url("../img/img1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.height-100vh{
+	height: 100vh;
+}
+.hello{
+	font-size: 15em;
+	margin: 1em 0;
+	color: #fff;
+	text-align: center;
+	font-family: 'Pacifico', cursive;
+}
+.m1{
+	font-size: 6em;
+	text-align: center;
+	margin-top: 6em;
+	color:#fff;
+	font-family: 'Pacifico', cursive;
+}
+.m2{
+	font-size: 6em;
+	text-align: center;
+	margin-top: 6em;
+	color:#000000;
+	font-family: 'Pacifico', cursive;
+}
+.parallax-container{height: 1000px;}
+.s1{
+	background-color: orange;
+	color: purple;
+	font-size: 7em;
+	font-family: 'Pacifico', cursive;
+}
