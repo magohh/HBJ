@@ -4,71 +4,74 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Happy birthday</title>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
-	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<link type="text/css" rel="stylesheet" href="css/extra.css"  media="screen,projection"/>
-	<link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" href="css/universal-parallax.min.css" />
 	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-	<script src="js/universal-parallax.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&family=Bungee+Shade&display=swap" rel="stylesheet">
+	<link href="css/universal-parallax.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Milonga&family=Single+Day&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/materialize.min.css">
 </head>
 <body>
 <!--1-->
-	<section class="container container--full">
+	<section class="bg-color container-p container--full">
 		<div class="content" style="position:relative;">
 			<div class="hello" data-aos="fade-right">Hello</div>
+			<p>First please press to the play button :D</p>
+			<audio controls autoplay="true" id="audio" src="palette.mp3"></audio>
+			<p>Now, you can continue</p>
 		</div>
 		<div class="mouse"></div>
 		<div class="parallax bg1"></div>
 	</section>
 <!--2-->
-	<section class="container container--small">
-		<div class="content">
-			<p class="pacifico fz-3"><strong>Today is a special day</strong></p>
+	<section class="container-p container--small">
+		<div class="content margin-auto center-align">
+			<p class="bungee fz-3 white-text"><strong>Today is a special day</strong></p>
 		</div>
 		<div class="parallax" data-parallax-image="img/img2.jpg"></div>
 	</section>
 
-	<section class="container container--big">
-		<div class="content">
-			<marquee behavior="scroll" scrollamount="15" direction="up"><h1 class="fz-5 center-align nanum deep-purple-text text-accent-4">Cause it's your Birthday!!!</h1></marquee>
+	<section class="container-p container--big">
+		<div class="content margin-auto center-align">
+			<marquee behavior="scroll" scrollamount="15" direction="up"><h1 class="fz-5 nanum deep-purple-text text-accent-4 parpadea">Cause it's your Birthday!!!</h1></marquee>
 		</div>
 		<div class="parallax" id="bg3"></div>
 	</section>
 
-	<section class="container container--full">
+	<section class="container-p container--full">
 		<div class="content">
-			<h2 class="nanum fz-2 white-text">i hope that water wets you, that wind ruffles your hair, that the smell of new lands makes beat your heart and a fire start on it that moves you to your dreams...</h2>
+			<h2 class="nanum fz-3 white-text">i hope that water wets you, that wind ruffles your hair, that the smell of new lands makes beat your heart and a fire start on it that moves you to your dreams...</h2>
 		</div>
 		<div class="parallax" data-parallax-image="img/img5.jpg"></div>
 	</section>
 
-	<section class="container container--full">
+	<section class="container-p container--full">
 		<div class="content">
 			<h2 class="nanum fz-2 white-text">There's fear i know, and i can't give you anything against it, but you know what, just do it!, do it with fear but don't stay without trying it, we'll stay in this life a short time so just full yourself of many life experiences as you can and have fun</h2>
 		</div>
 		<div class="parallax" data-parallax-image="img/img10.jpg"></div>
 	</section>
-	<section class="container container--big">
+	<section class="container-p bg-color-1 container--full">
 		<div class="content">
-			<h2 class="nanum fz-2 cyan-text accent-3-text bg-b">Life is a misterious and who knows why things happen as they happen but i'm really glad and happy to meet you i have to confess you something... i wasn't too entusiastic about Santiago well at the begining i was continusoly thinking, i should have choosen other destinity jejej :B but then the way we could connect and talk without talk jaja and the laught, the food, everything changed and i thought oh i could haven't choosen a better place. I'll remember those days as the best days of my life :) </h2>
+			<h2 class="milonga fz-2">Who knows why things happen as they happen but i'm really glad and happy to meet you i wasn't too entusiastic about Santiago well at the begining i was continuously thinking, i should have choosen other destinity jejej :B but then after i meet you, everything changed and i thought oh i could haven't choosen a better place. I'll remember those days as the best days of my life :) </h2>
 		</div>
-		<div class="parallax" id="bg4"></div>
+		<div class="parallax" data-parallax-image="img/img7.jpg"></div>
 	</section>
-	<section class="container container--full">
+	<section class="container-p container--full bg-color-2">
 		<div class="content">
-			<h2 class="nanum fz-2 white-text">Enjoy so much your day, be free, run, eat, cry, laught, live.... 생일 축하합니다</h2>
+			<h2 class="bungee fz-3">Enjoy so much your day, be free, run, eat, cry, laught, live!!.... <p class="fz-3 single">생일 축하합니다</p></h2>
 		</div>
 		<div class="parallax" data-parallax-image="img/img11.jpg"></div>
 	</section>
-
-	<script>
+	<script src="js/universal-parallax.min.js"></script>
+		<script>
 		new universalParallax().init({
 			speed: 4
 		});
+
 	</script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

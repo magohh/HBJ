@@ -1,7 +1,14 @@
+*, :after, :before {
+  box-sizing: border-box;
+}
 
+body, html {
+  height: 100%;
+  width: 100%;
+  margin:0;
+}
 .hello{
 	font-size: 5em;
-	margin: 1em 0;
 	color: #fff;
 	text-align: center;
 	font-family: 'Pacifico', cursive;
@@ -10,11 +17,19 @@
 .pacifico{font-family: 'Pacifico', cursive;}
 .nanum{font-family: 'Nanum Pen Script', cursive;}
 .sriracha{font-family: 'Sriracha', cursive;}
+.bungee{font-family: 'Bungee Shade', cursive;}
+.baloo{font-family: 'Baloo Tamma 2', cursive;}
+.milonga{font-family: 'Milonga', cursive;}
+.single{font-family: 'Single Day', cursive;}
+
 .fz-1-5{font-size: 1.5em;}
 .fz-2{font-size: 2em;}
 .fz-3{font-size: 3em;}
 .fz-5{font-size: 5em;}
 .bg-b{background-color:rgba(0,0,0,.5);}
+span.fz-3{line-height: 1.1em;}
+
+.margin-auto{margin: 0 auto;}
 .mouse {
   display: block;
   position: absolute;
@@ -61,3 +76,118 @@
     transform: translate(-50%, calc(-50% + 20px));
   }
 }
+
+
+.bg1 {
+  background-image: url("../img/img1.jpg");
+}
+
+#bg3 {
+  background-image: url("../img/img3.jpg");
+}
+
+.container-p {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 15px;
+  position: relative;
+  width: 100%;
+}
+.container--big {
+  height: 175vh;
+}
+.container--full {
+  height: 100vh;
+}
+.container--small {
+  height: 40vh;
+}
+.bg-color .content {
+  background: rgba(176, 52, 234, .75);
+  border-radius: 8px;
+  color: #fff;
+  margin: 0 auto;
+  padding: 2em;
+  text-align: center;
+}
+.bg-color-1 .content {
+  background: rgba(0, 240, 15, 0.3);
+  border-radius: 8px;
+  color: #fff;
+  margin: 0 auto;
+  padding: 2em;
+  text-align: center;
+}
+.bg-color-2 .content {
+  background: rgba(105, 0,240, .5);
+  border-radius: 8px;
+  color: #F0EC00;
+  margin: 0 auto;
+  padding: 2em;
+  text-align: center;
+}
+.parallax__container {
+  clip: rect(0, auto, auto, 0);
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -100;
+}
+.parallax__container .parallax {
+  /* can be put in a seperate class for better control */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* --------------------------- */
+  position: fixed;
+  top: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  width: 100%;
+}
+
+.parpadea {
+  
+  animation-name: parpadeo;
+  animation-duration: .1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name:parpadeo;
+  -webkit-animation-duration: .1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo{  
+  0% { opacity: 100; }
+  100% { opacity: 0; }
+}
+
+@-webkit-keyframes parpadeo {  
+  0% { opacity: 100; }
+   100% { opacity: 0; }
+}
+
+@keyframes parpadeo {  
+  0% { opacity: 100; }
+  100% { opacity: 0; }
+}
+
+#audio:hover #now{display: block}
+#now{display: none;}
+
+
