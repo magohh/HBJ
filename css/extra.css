@@ -32,6 +32,7 @@ p.fz-2{
   margin:0;}
 
 .margin-auto{margin: 0 auto;}
+.margin-2{margin:2em;}
 .mouse {
   display: block;
   position: absolute;
@@ -117,7 +118,6 @@ p.fz-2{
   border-radius: 8px;
   color: #fff;
   margin: 0 auto;
-  padding: 1em;
   text-align: center;
 }
 .bg-color-1 .content {
