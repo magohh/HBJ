@@ -27,7 +27,9 @@ body, html {
 .fz-3{font-size: 3em;}
 .fz-5{font-size: 5em;}
 .bg-b{background-color:rgba(0,0,0,.5);}
-p.fz-3{line-height: 1.1em;}
+p.fz-2{
+  line-height: 1.1em;
+  margin:0;}
 
 .margin-auto{margin: 0 auto;}
 .mouse {
