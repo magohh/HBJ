@@ -26,12 +26,30 @@
 
 <div id="modal" class="modal">
     <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
+      <h4>First some control quesitons</h4>
+      	<div>
+		<p>50 + 10 = ?</p>
+		<div class="row">
+			<div class="col s4"><p>a) 10</p></div>
+			<div class="col s4"><p>b) <a href="javascript:q1();">40</a></p></div>
+			<div class="col s4"><p>c) red</p></div>
+		</div>
+	</div>
+	<div id="q2" style="display:none;">
+		<p>Name of Anna's sister</p>
+	 	<div class="col s4"><p>a) <a href="javascript:q2();">Elsa</a></p></div>
+		<div class="col s4"><p>b) María40</p></div>
+		<div class="col s4"><p>c) 23</p></div>
+	</div>
+	<div id="q3" style="display:none;">
+		<p>Number of human being bones</p>
+	 	<div class="col s4"><p>a) <a href="javascript:q3();">206</a></p></div>
+		<div class="col s4"><p>b) 207</p></div>
+		<div class="col s4"><p>c) 205</p></div>
+	</div>
+	<div id="q4" class="none modal-footer"><p class="modal-action modal-close waves-effect waves-green btn-flat"><a href="#!">Continue</a></p></div>
     </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
+ 
 </div>
 <!--1-->
 	<section class="bg-color container-p container--full">
@@ -84,28 +102,7 @@
 		</div>
 		<div class="parallax" data-parallax-image="img/img11.jpg"></div>
 	</section>
-	<div>
-		<p>First some control quesitons</p>
-		<p>50 + 10 = ?</p>
-		<div class="row">
-			<div class="col s4"><p>10</p></div>
-			<div class="col s4"><p><a href="javascript:q1();">40</a></p></div>
-			<div class="col s4"><p>red</p></div>
-		</div>
-	</div>
-<div id="q2" style="display:none;">
-	<p>Name of Anna's sister</p>
- 	<div class="col s4"><p><a href="javascript:q2();">Elsa</a></p></div>
-	<div class="col s4"><p>María40</p></div>
-	<div class="col s4"><p>23</p></div>
-</div>
-<div id="q3" style="display:none;">
-	<p>Number of human being bones</p>
- 	<div class="col s4"><p><a href="javascript:q3();">206</a></p></div>
-	<div class="col s4"><p>207</p></div>
-	<div class="col s4"><p>205</p></div>
-</div>
-<div id="q4" class="none"><p><a href="javascript:q4();">You win!!</a></p></div>
+
 <script languague="javascript">
         function q1() {
             div = document.getElementById('q2');
