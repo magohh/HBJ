@@ -25,21 +25,22 @@
 <body>
 
 <div id="modal" class="modal">
-    <div class="modal-content">
-      <h4>First some control quesitons</h4>
-      	<div>
+    <div class="modal-content" id="err-b">
+    	<div id="err" class="none err">Meeeh no is not</div>
+		<h4>First some control quesitons</h4>
+		<div>
 		<p>50 + 10 = ?</p>
 		<div class="row">
-			<div class="col s4"><p>a) 10</p></div>
+			<div class="col s4"><p>a)<a class="black-text" href="javascript:err();" onclick="cambiar_fondo();">10</a></p></div>
 			<div class="col s4"><p>b) <a  class="black-text" href="javascript:q1();">60</a></p></div>
-			<div class="col s4"><p>c) red</p></div>
+			<div class="col s4"><p><a class="black-text" href="javascript:err();" onclick="cambiar_fondo();">c) red</a></p></div>
 		</div>
 	</div>
 	<div id="q2" class="none">
 		<p>Name of Anna's sister</p>
 	 	<div class="col s4"><p>a) <a class="black-text" href="javascript:q2();">Elsa</a></p></div>
-		<div class="col s4"><p>b) María40</p></div>
-		<div class="col s4"><p>c) 23</p></div>
+		<div class="col s4"><p><a class="black-text" href="javascript:err();" onclick="cambiar_fondo();">b) María</a></p></div>
+		<div class="col s4"><p><a class="black-text" href="javascript:err();" onclick="cambiar_fondo();">c) 23</a></p></div>
 	</div>
 	<div id="q3" class="none">
 		<p>Number of human being bones</p>
@@ -137,6 +138,16 @@
             div = document.getElementById('q6');
             div.style.display = 'block';
         }
+        function err() {
+            div = document.getElementById('err');
+            div.style.display = 'block';
+
+        }
+    function cambiar_fondo() {
+                obj = document.getElementById('err-b');
+                obj.style.backgroundColor = (obj.style.backgroundColor == '#000') ? 'none' : '#000';
+            }
+
 </script>
 	<script src="js/universal-parallax.min.js"></script>
 		<script>
@@ -150,6 +161,11 @@
     $('#modal').modal();
     $('#modal').modal('open'); 
  });
+$('.modal').modal({
+      dismissible: false,
+      
+    }
+  );
 </script>
     </script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
