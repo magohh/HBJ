@@ -24,6 +24,7 @@ body, html {
 
 .fz-1-5{font-size: 1.5em;}
 .fz-2{font-size: 2em;}
+.fz-1-5-rem{font-size: 1.5rem;}
 .fz-3{font-size: 3em;}
 .fz-5{font-size: 5em;}
 .bg-b{background-color:rgba(0,0,0,.5);}
@@ -221,7 +222,7 @@ p.fz-2{
 
 .win{
   position: absolute;
-  top: -50px;
+  top: -10vh;
   left: 0px;
   right: 0px;
   margin: auto;
@@ -249,4 +250,5 @@ p.fz-2{
     width: 100vw;
     height: 100vh;
     top:0!important;
+    max-height: 100vh;
 }
