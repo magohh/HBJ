@@ -4,70 +4,69 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Happy birthday</title>
+<!--css-->
+	<link type="text/css" rel="stylesheet" href="css/extra.css"  media="screen,projection"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<link rel="stylesheet" href="css/extra.css">
+<!--fonts-->
 	<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
-	<link type="text/css" rel="stylesheet" href="css/extra.css"  media="screen,projection"/>
 	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&family=Bungee+Shade&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Milonga&family=Single+Day&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/materialize.min.css">
 	<link rel="icon" href="img/favicon.png" type="image/gif" sizes="16x16">
-	<!--CSS-->
-	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-	<link rel="stylesheet" href="css/extra.css">
 <!--JS-->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
-
+	<script type="text/javascript" src="js/extra.js"></script>
 </head>
 <body>
-<div id="modal" class="modal">
+<div id="modal" class="modal sora indigo darken-1 white-text">
     <div class="modal-content" id="err-b">
     	<div id="err" class="none err"><p>Meeeh no is not</p><button onClick="window.location.reload();">Try again</button></div>
     	<h1 class="center-align">Hey!!</h1>
 		<h4 class="center-align">First answer these quesitons</h4>
 		<div class="container">
-			<p class="fz-1-5-rem">50 + 10 = ?</p>
-			<div class="row">
-				<div class="col s4"><p>a)<a class="b-text" href="javascript:err();" onclick="cambiar_fondo();">10</a></p></div>
-				<div class="col s4"><p>b) <a  class="b-text" href="javascript:q1();">60</a></p></div>
-				<div class="col s4"><p><a class="b-text" href="javascript:err();" onclick="cambiar_fondo();">c) red</a></p></div>
+			<div class="quest">
+				<p class="fz-1-5-rem">50 + 10 = ?</p>
+				<a href="javascript:err();" onclick="cambiar_fondo();"><p class="b-text">a) 10</p></a>
+				<a id="qu" href="javascript:q1(); co();"><p class="b-text">b) 60</p></a>
+				<a href="javascript:err();" onclick="cambiar_fondo();"><p class="b-text">c) red</p></a>
 			</div>
 		
-			<div id="q2" class="none">
+			<div id="q2" class="none quest">
 				<p class="fz-1-5-rem">Name of Anna's sister</p>
-			 	<div class="col s4"><p>a) <a class="b-text" href="javascript:q2();">Elsa</a></p></div>
-				<div class="col s4"><p><a class="b-text" href="javascript:err();" onclick="cambiar_fondo();">b) María</a></p></div>
-				<div class="col s4"><p><a class="b-text" href="javascript:err();" onclick="cambiar_fondo();">c) 23</a></p></div>
+			 	<a id="qu1" href="javascript:q2(); co1();"><p class="b-text">a) Elsa</p></a>
+			 	<a href="javascript:err();" onclick="cambiar_fondo();"><p class="b-text">b) María</p></a>
+				<a href="javascript:err();" onclick="cambiar_fondo();"><p class="b-text">c) 23</p></a>
 			</div>
 
-			<div id="q3" class="none">
+			<div id="q3" class="none quest">
 				<p class="fz-1-5-rem">Number of human being bones</p>
-			 	<div class="col s4"><p>a) <a class="b-text" href="javascript:q3();">206</a></p></div>
-				<div class="col s4"><p><a class="b-text" href="javascript:err();" onclick="cambiar_fondo();">b) 207</a></p></div>
-				<div class="col s4"><p><a class="b-text" href="javascript:err();" onclick="cambiar_fondo();">c) 205</a></p></div>
+			 	<a id="qu2" href="javascript:q3(); co2();"><p class="b-text">a) 206</p></a>
+				<a href="javascript:err();" onclick="cambiar_fondo();"><p class="b-text">b) 207</p></a>
+				<a href="javascript:err();" onclick="cambiar_fondo();"><p class="b-text">c) 205</p></a>
 			</div>
 
-			<div id="q4" class="none">
+			<div id="q4" class="none quest">
 				<p class="fz-1-5-rem">Where we spoke the first time</p>
-			 	<div class="col s4"><p>a) <a class="b-text" href="javascript:q4();">In a restaurant</a></p></div>
-				<div class="col s4"><p><a class="b-text" href="javascript:err();" onclick="cambiar_fondo();">b) On a trip</a></p></div>
-				<div class="col s4"><p><a class="b-text" href="javascript:err();" onclick="cambiar_fondo();">c) At school</a></p></div>
+			 	<a id="qu3" href="javascript:q4(); co3();"><p class="b-text" >a) In a restaurant</p></a>
+			 	<a href="javascript:err();" onclick="cambiar_fondo();"><p class="b-text" >b) On a trip</p></a>
+			 	<a href="javascript:err();" onclick="cambiar_fondo();"><p class="b-text" >c) At school</p></a>
 			</div>
 
-			<div id="q5" class="none">
+			<div id="q5" class="none quest">
 				<p class="fz-1-5-rem">The last one just to make sure it's you</p>
 				<p class="fz-1-5-rem">Wich was the number of your piso in Spain?</p>
-			 	<div class="col s4"><p>a) <a class="b-text" href="javascript:q5();">22</a></p></div>
-				<div class="col s4"><p><a class="b-text" href="javascript:err();" onclick="cambiar_fondo();">b) 5-A</a></p></div>
-				<div class="col s4"><p><a class="b-text" href="javascript:err();" onclick="cambiar_fondo();">c) 21</a></p></div>
+			 	<a id="qu4" href="javascript:q5(); co4();"><p class="b-text">a) 22</p></a>
+				<a href="javascript:err();" onclick="cambiar_fondo();"><p class="b-text">b) 5-A</p></a>
+				<a href="javascript:err();" onclick="cambiar_fondo();"><p class="b-text">c) 21</p></a>
 			</div>
-
-			<div id="q6" class="none relative"><p class="win modal-action modal-close waves-effect waves-green btn-flat"><a class="fz-1-5-rem" href="#!">CONTINUE</a></p></div>
 		</div>
+			<div id="q6" class="none relative"><p class="win modal-action modal-close waves-effect waves-green btn-flat"><a class="fz-1-5-rem" href="#!">CONTINUE</a></p></div>
 	</div>
 </div>
 <!--1-->
@@ -122,56 +121,14 @@
 		<div class="parallax" data-parallax-image="img/img11.jpg"></div>
 	</section>
 
-<script languague="javascript">
-        function q1() {
-            div = document.getElementById('q2');
-            div.style.display = 'block';
-        }
-        function q2() {
-            div = document.getElementById('q3');
-            div.style.display = 'block';
-        }
-        function q3() {
-            div = document.getElementById('q4');
-            div.style.display = 'block';
-        }
-        function q4() {
-            div = document.getElementById('q5');
-            div.style.display = 'block';
-        }
-        function q5() {
-            div = document.getElementById('q6');
-            div.style.display = 'block';
-        }
-        function err() {
-            div = document.getElementById('err');
-            div.style.display = 'block';
-
-        }
-    function cambiar_fondo() {
-                obj = document.getElementById('err-b');
-                obj.style.backgroundColor = (obj.style.backgroundColor == '#000') ? 'none' : '#000';
-            }
-
-</script>
 	<script src="js/universal-parallax.min.js"></script>
-		<script>
+	<script>
 		new universalParallax().init({
-			speed: 4
-		});
+            speed: 4
+        });
 	</script>
-
-<script>
- $(document).ready(function(){
-    $('#modal').modal();
-    $('#modal').modal('open'); 
- });
-
-</script>
-    </script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
-	 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 
 </body>
