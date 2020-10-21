@@ -251,6 +251,8 @@ p.fz-2{
     height: 100vh;
     top:0!important;
     max-height: 100vh;
+    opacity: .9!important;
 }
 .b-text{color:#000;}
+a.b-text:active{color:#F0EC00;}
 a.b-text:visited{color:#F0EC00;}
